@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our services</title>
+    <style>
+svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+svg {
+    position: relative;
+    left:0px;
+    bottom: 0px;
+    width: 100%;   
+    background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>services page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+      <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+      <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+      <a href="index2" class="w3-bar-item w3-button">Leena Chatbot Home</a>
+      <a href="about" class="w3-bar-item w3-button">about</a>
+      <a href="services" class="w3-bar-item w3-button">Our Services</a>
+      <a href="safety" class="w3-bar-item w3-button">Safety</a>
+      <a href="faqs" class="w3-bar-item w3-button">FAQs</a>
+      <a href="login" class="w3-bar-item w3-button">Login</a>
+      <a href="register" class="w3-bar-item w3-button">Sign Up</a>
+   
+    </nav>
+    
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+      <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+      <div class="w3-center">
+      <h4>BEAUTIFUL Chatbot</h4>
+      <h1 class="w3-xxxlarge w3-animate-bottom">BUILT WITH OpenAI</h1>
+        <div class="w3-padding-32">
+          <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Chat and clear Any Doubts</button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-top">
+          <header class="w3-container w3-theme-l1"> 
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">×</span>
+            <h4>Hey user login here? </h4>
+            <h5>Because we can always help you <a href="login">Login</a><i class="fa fa-smile-o"></i></h5>
+          </header>
+          <div class="w3-padding">
+            <p>Cool if you no Account then sign up here?</p>
+            <p>Go to our <a class="w3-btn" href="register">Register</a> to learn more! and chat with leenabot</p>
+          </div>
+          <footer class="w3-container" style="background-color:rgb(105, 196, 158);">
+            <p>Welcome....! we are always here for you</p>
+          </footer>
+        </div>
+    </div>
+    
+    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+      <h3>where can we chat with Leenabot</h3><br>
+      <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+      <p>Web browsers</p>
+      <p>IOT Devices </p>
+      <p>Mobile Devices</p>
+      <p>Desktop Applications</p>
+      </div>
+    </div>
+    
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+      <h3>created with??</h3><br>
+      <i class="fa fa-cloud w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+      <p>Chatgpt-3.5</p>
+      <p>OpenAI</p>
+      <p>text-davanci-003-model </p>
+      <p>Genuine</p>
+      </div>
+    </div>
+    
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+      <h3>24 hours</h3><br>
+      <i class="fa fa-clock-o w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+      <p>You can chat with leena anytime</p>
+      <p>24/7 support to you</p>
+      <p>search for anything</p>
+      <p>support only in text format </p>
+      </div>
+    </div>
+    </div>     
+    <header class="w3-container w3-teal">
+      <h2>Services provided by Leena Chatbot</h2>
+    </header>
+    
+    <div class="w3-padding w3-white w3-display-container">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h2>Services</h2>
+
+  <ul style="list-style-type:circle;">
+   <li>Text Generation: The model can generate human-like text in response to prompts, making it useful for content generation, creative writing, and answering questions.
+</li>
+<li>Language Translation: It can translate text from one language to another, making it a useful tool for language translation and localization tasks.</li>
+
+  <li>Conversational Agents: These models can be used to build chatbots or virtual assistants that engage in human-like conversations, answering questions and providing information.</li>
+
+    <li>Text Summarization: It can generate concise and coherent summaries of longer texts, which is helpful for condensing information.</li>
+
+      <li>Text-based Question Answering: You can ask the model questions and receive answers based on the information available in its training data.</li>
+
+        <li>Text Completion: The model can help in completing sentences or text snippets in a coherent and contextually relevant manner.</li>
+
+          <li>Text-based Games and Puzzles: It can be used to create text-based games, puzzles, and interactive storytelling experiences.</li>
+
+            <li>Content Recommendations: The model can suggest content, products, or services based on user input or preferences.</li>
+
+              <li>Coding Assistance: It can assist with coding tasks by providing code snippets, explanations, and debugging support.</li>
+
+                <li>Natural Language Understanding: It can analyze and understand text, extracting information and insights from textual data.</li>
+  </ul>
+        </div>
+    <hr>
+    <hr>
+    
+    <hr>
+    <h2 class="w3-center">Tap here to know something Interest</h2>
+    <div class="w3-border">
+    <div class="w3-bar w3-theme">
+      <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openService(event,'study')">Study</button>
+      <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openService(event,'coding')">Coding</button>
+      <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openService(event,'cooking')">cooking</button>
+      <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openService(event,'beauty')">Beauty</button>
+      <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openService(event,'places')">Places</button>
+      <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openService(event,'remedies')">Remedies</button>
+    </div>
+    
+    <div id="study" class="w3-container city w3-animate-opacity">
+      <h2>study</h2>
+      <p>open is very helpful for studies for every people in the world</p>
+      <p>ChatGPT can be a valuable study tool by providing information, explanations, and assistance in a conversational manner. It can help you understand complex concepts, clarify doubts, and provide explanations for various subjects, making it easier to grasp and retain information. Additionally, it can assist in brainstorming ideas, generating essay outlines, and offering suggestions for research topics. ChatGPT can also aid in language learning, math problem-solving, and test preparation by providing practice questions and explanations. Overall, it's a versatile resource to enhance your learning experience and streamline your study process.</p>    </div>
+      <div id="coding" class="w3-container city w3-animate-opacity">
+        <h2>coding</h2>
+        <p>Coding makes the Future</p>
+        <p>OpenAI's text-davinci-003 model can be a valuable coding companion by assisting with a wide range of programming tasks. It can help you troubleshoot and debug code by explaining errors and suggesting solutions. It can generate code snippets based on your requirements, provide guidance on algorithm design and data structures, and answer questions about specific programming languages and frameworks. Whether you're a beginner looking for coding examples or an experienced developer seeking solutions to complex problems, this model can offer valuable insights and assistance throughout your coding journey, making it a versatile tool for improving your coding skills and productivity.</p>    </div>
+        <div id="cooking" class="w3-container city w3-animate-opacity">
+          <h2>cooking</h2>
+          <p>Cooking is most important in daily life</p>
+          <p>In coding, ChatGPT can be a valuable resource for both beginners and experienced developers. It can assist with debugging code by offering suggestions and explanations for errors, help in generating code snippets for specific tasks, and provide insights into algorithm design and data structures. It can also serve as a source of information on programming languages, libraries, and frameworks. Whether you need help with a specific coding problem or want to learn a new language, ChatGPT is a versatile tool that can provide guidance and support throughout your coding journey.</p>    </div>
+          <div id="beauty" class="w3-container city w3-animate-opacity">
+            <h2>Beauty</h2>
+            <p>Beauty gives impact in your work</p>
+            <p>OpenAI's text-davinci-003 model can assist in the realm of beauty by providing information on skincare routines, makeup techniques, and beauty product recommendations. It can offer personalized beauty tips based on individual preferences and skin types, suggest trendy makeup looks, and explain the science behind various beauty products. Whether you're looking for advice on achieving healthy, glowing skin or want to experiment with new makeup styles, this model can provide guidance, product reviews, and insights to help you enhance your beauty regimen and express your personal style.</p>    </div>
+            <div id="places" class="w3-container city w3-animate-opacity">
+              <h2>places</h2>
+              <p>Places are ready to explore </p>
+              <p>OpenAI's text-davinci-003 model can be a valuable resource for exploring and learning about places by providing detailed descriptions, historical context, and travel recommendations. It can offer insights into the culture, attractions, and significance of different locations around the world, helping you plan trips or gain a deeper understanding of specific regions. Whether you're researching a vacation destination, writing a travel guide, or simply curious about a particular place, this model can supply rich information, local insights, and even suggest off-the-beaten-path gems to make your exploration more enriching and insightful.</p>    </div>
+              <div id="remedies" class="w3-container city w3-animate-opacity">
+                <h2>Remedies</h2>
+                <p>Some times we are not able to effort so just ask for remedies</p>
+                <p>OpenAI's text-davinci-003 model can be a valuable resource for remedies by offering information on a wide range of solutions for common health issues, DIY home remedies, and natural alternatives. It can provide insights on managing minor ailments, suggest holistic approaches to wellness, and explain the benefits of herbal remedies or lifestyle changes. Whether you're seeking advice on alleviating a headache, managing stress, or exploring natural healing methods, this model can offer detailed explanations and suggestions to help you find effective remedies for various concerns.</p>    </div>
+    
+    </div>
+    
+    <hr>
+   
+    
+    <hr>
+  
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark w3-padding-16">
+      <h3>Footer</h3>
+      <p>Powered by <a href="" target="_blank">leena chatbot</a></p>
+      <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+        <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+        <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+        <i class="fa fa-chevron-circle-up"></i></span></a>
+      </div>
+      <p>Remember to check out our  <a href="" class="w3-btn w3-theme-light" target="_blank">leena Reference</a></p>
+    </footer>
+    
+    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+    <script>
+    // Side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "100%";
+      x.style.fontSize = "40px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    
+    // Tabs
+    function openService(evt, cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      var activebtn = document.getElementsByClassName("testbtn");
+      for (i = 0; i < x.length; i++) {
+        activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " w3-dark-grey";
+    }
+    
+    var mybtn = document.getElementsByClassName("testbtn")[0];
+    mybtn.click();
+    
+    // Accordions
+    function myAccFunc(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    
+    // Slideshows
+    var slideIndex = 1;
+    
+    function plusDivs(n) {
+      slideIndex = slideIndex + n;
+      showDivs(slideIndex);
+    }
+    
+    function showDivs(n) {
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    
+    showDivs(1);
+    
+    // Progress Bars
+    function move() {
+      var elem = document.getElementById("myBar");   
+      var width = 5;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width == 100) {
+          clearInterval(id);
+        } else {
+          width++; 
+          elem.style.width = width + '%'; 
+          elem.innerHTML = width * 1  + '%';
+        }
+      }
+    }
+    </script>
+    
+    </body>
+    </html>
+     
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg> 

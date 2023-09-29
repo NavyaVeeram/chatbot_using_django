@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="static/footer.css">
+<title>about page in html</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  /*font-family: "Inconsolata", sans-serif;*/
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image:linear-gradient(rgba(246, 241, 241, 0.2),rgba(244, 239, 239, 0.2)),url("https://img.freepik.com/free-vector/gradient-brain-background_23-2150516335.jpg?size=626&ext=jpg&ga=GA1.1.939676640.1694439069&semt=ais");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="index2" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="services" class="w3-button w3-block w3-black">Our Services</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="safety" class="w3-button w3-block w3-black">Safety</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="faqs" class="w3-button w3-block w3-black">FAQs</a>
+    </div>
+    <div class="w3-col s2">
+        <a href="login" class="w3-button w3-block w3-black">login</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="register" class="w3-button w3-block w3-black">sign Up</a>
+      </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">open 24 hours</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Leena<br>Chatbot</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="padding:30px;border-top-right-radius: 20px;border-bottom-left-radius: 20px;">ABOUT THE Leena Chatbot</span></h5>
+    <p>Our chatbot is powered by the cutting-edge technology of OpenAI, a leader in the field of artificial intelligence. OpenAI's advanced language models, like the one that drives this chatbot, have been developed to provide intelligent and context-aware interactions. This enables our chatbot to understand and respond to your queries with a high degree of accuracy.</p>
+      <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Language is the bridge between human minds and AI, and ChatGPT exemplifies the power of that connection."</i></p>
+      <p> - ChatGPT Team</p>
+    </div>
+    <img src="https://img.freepik.com/free-vector/programmers-chatbot-processing-natural-language-natural-language-processing-chatbot-natural-language-natural-language-scince-concept_335657-1872.jpg?size=626&ext=jpg&ga=GA1.2.939676640.1694439069&semt=sph" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> 24/7</p>
+    <p><strong>visit:</strong> www.leenabot.com</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="padding:30px;border-top-right-radius: 20px;border-bottom-left-radius: 20px;">You May Use Leena for:</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Search </div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">clearing Doubts</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Recommend movies</h5>
+      <p class="w3-text-grey">Ask the list of Movies with Leena</p><br>
+    
+      <h5>Preparing of Dishes</h5>
+      <p class="w3-text-grey">If you are not aware of cooking ask here about it.</p><br>
+    
+      <h5>Search for names</h5>
+      <p class="w3-text-grey">You can also search for names for the newly born babies</p><br>
+    
+      <h5>According to studies</h5>
+      <p class="w3-text-grey">Don't think about Education,just anyone can use</p><br>
+    
+      <h5>Fun</h5>
+      <p class="w3-text-grey">Ask some jokes to laugh</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Don't </h5>
+      <p class="w3-text-grey">chat with single words</p><br>
+    
+      <h5>Ask again</h5>
+      <p class="w3-text-grey">If you get the Error ask in another way</p><br>
+    
+      <h5>Multiple languages</h5>
+      <p class="w3-text-grey">You can ask in any language</p><br>
+    
+      <h5>Errors</h5>
+      <p class="w3-text-grey">Sometimes you will got errors if you talk in wrong way</p><br>
+    
+      <h5>We save your data</h5>
+      <p class="w3-text-grey">Keep in mind we all save your data</p>
+    </div>  
+    <img src="https://img.freepik.com/free-vector/people-using-robots-concept-illustration_114360-16118.jpg?size=626&ext=jpg&ga=GA1.1.939676640.1694439069&semt=sph" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="padding:30px;border-top-right-radius: 20px;border-bottom-left-radius: 20px;">WHERE TO FIND US</span></h5>
+    <p>www.leenachatbot.com</p>
+</div></div>
+<div class="w3-container p-5 bg-light text-center">
+<h1 class="text-center">Contact Us</h1>
+<address>
+Phno:9283783623<br>
+kuppam <br>
+Andhrapradesh<br>
+</address>
+<br>
+</div>
+<div class="container-fluid footer p-3 text-center">
+   
+  <div class="row">
+     
+  <div class="col">
+     <br>
+  <table>
+      <tr>
+      <th>
+          partnership
+      </th>
+      <th>
+          About
+      </th>
+      <th>
+          support
+      </th>
+  </tr>
+  <tr>
+      <td>
+          websites
+      </td>
+      <td>
+         our projects
+      </td>
+      <td>
+          support request
+      </td>
+  </tr>
+  <tr>
+      <td>
+         Branding
+      </td>
+      <td>
+        careers
+      </td>
+      <td>
+          contact
+      </td>
+  </tr>
+  <tr></tr>
+  <tr></tr>
+  
+  </table>
+  
+  </div>
+  </div>
+  </div>
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+      document.getElementById("myLink").click();
+      </script>
+    
+</body>
+
+</html>
