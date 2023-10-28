@@ -19,8 +19,6 @@ urlpatterns = [
     path('faqs',views.faqs,name='faqs'),
     path('contact_us', views.contact_us,name='contact_us'),
 ]
-
-
 # Serve static files during development
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

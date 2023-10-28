@@ -8,7 +8,7 @@ from .models import Chat
 from django.utils import timezone
 
 
-open_api_key = ''
+open_api_key ="your open API key"
 openai.api_key = open_api_key
 
 def ask_openai(message):
@@ -89,7 +89,6 @@ def register(request):
 def logout(request):
     auth.logout(request)
     return redirect('login')
-
 
 
 
